@@ -1,0 +1,7 @@
+mol 1 1 caL  0	0 480
+
+mol 1 1 caL  50	 50 480
+mol 1 1 caL -50 -50 480
+mol 1 1 caL  50 -50 480
+mol 1 1 caL -50  50 480
+

@@ -1,0 +1,28 @@
+#------------------Surfaces------------
+start_surface sides
+action both all r
+color both grey 0.2
+polygon both edge
+panel rect +2 -250 -250 0   500 500 rect_bottom
+panel rect -2 -250 -250 500 500 500 rect_top
+panel rect +0 -250 -250 0   500 500 rect_left
+panel rect -0  250 -250 0	500 500 rect_right
+panel rect +1 -250 -250 0	500 500 rect_front
+panel rect -1 -250  250 0 	500 500 rect_back
+end_surface
+
+#--------------------------------------
+start_compartment complete
+surface sides
+point 1 1 1
+end_compartment
+
+
+#--------------------------------------
+#---compartment-dependent diffusion setup--------------
+#---defined after molecule apecies and compartments-----
+#-----------------------------------------------------------------------------
+# compartment dependent diffusion; have to be defined after compartments setup
+difc ca 	200000  #181740
+#difc cam 	50000  #from faas and mody
+
