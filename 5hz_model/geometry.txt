@@ -1,0 +1,60 @@
+#------------------Surfaces------------
+start_surface membrane
+action both all r
+color both grey 0.8
+polygon both edge
+
+panel rect -2 -375 -375 1000 750 750 rect_top
+end_surface
+
+start_surface sides
+action both all r
+color both grey 0.8
+polygon both edge
+panel rect +2 -375 -375 0   750 750 rect_bottom
+
+panel rect +0 -375 -375 0   750 1000 rect_left
+panel rect -0  375 -375 0	750 1000 rect_right
+panel rect +1 -375 -375 0	750 1000 rect_front
+panel rect -1 -375  375 0 	750 1000 rect_back
+end_surface
+
+
+start_surface shell
+action both all t
+color both grey 0.8
+polygon both edge
+panel rect +2 -375 -375 975 750 750 rect_shell
+end_surface
+
+
+#--------------------------------------
+start_compartment complete
+surface membrane
+surface sides
+point 1 1 1
+end_compartment
+
+start_compartment nano
+surface membrane
+surface shell
+surface sides
+point 0 0 998
+end_compartment
+
+start_compartment cytol
+compartment equal complete
+compartment andnot nano
+end_compartment
+
+
+#--------------------------------------
+#---compartment-dependent diffusion setup--------------
+#---defined after molecule apecies and compartments-----
+#-----------------------------------------------------------------------------
+# compartment dependent diffusion; have to be defined after compartments setup
+difc ca 	300000  #181740
+difc cam 	50000  #from faas and mody
+difc bK 	2000
+difc Ng 	0
+
