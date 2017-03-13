@@ -4,7 +4,7 @@
 # phosphorylation sites are not included in mptr->bind molecule list
 # K for kinase, P for phosphate, S for substrate
 species ca
-species caL<v>  '/home/neuro/Documents/from_axon/dat_files/soma_v_2Hz.txt'
+species caL<v>  '/home/neuro/Documents/from_axon/dat_files/soma_v_10Hz.txt'
 
 molecule_lists total
 mol_list * total
@@ -13,9 +13,9 @@ sites	ca	cam
 sites   caL gate
 
 # voltage-dependent ca2+ channels
-reaction open_ch 	 caL{gate==0} -> caL[gate=1] + ca[cam=0]										
-reaction stay_open	 caL{gate==1} -> caL[gate=1] + ca[cam=0]
-reaction close_ch	 caL{gate==1} -> caL[gate=0]
+reaction open_ch<v> 	 caL{gate==0} -> caL[gate=1] + ca[cam=0]										
+reaction stay_open<v>	 caL{gate==1} -> caL[gate=1] + ca[cam=0]
+reaction close_ch<v>	 caL{gate==1} -> caL[gate=0]
 
 
 reaction end

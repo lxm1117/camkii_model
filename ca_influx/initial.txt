@@ -1,7 +1,15 @@
-mol 1 1 caL  0	0 480
+#mol 32 1 caL 0 0 480		#results in mol_ca_v2/mol_ca_10hz.txt.32ch
+mol 16 1 caL  0	0 480
 
+/*
 mol 1 1 caL  50	 50 480
 mol 1 1 caL -50 -50 480
+
 mol 1 1 caL  50 -50 480
-mol 1 1 caL -50  50 480
+mol 1 1 caL  50 -50 480
+
+mol 1 1 caL -100 100 480
+mol 1 1 caL -100 100 480
+*/
+
 

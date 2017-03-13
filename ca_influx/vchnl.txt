@@ -8,7 +8,7 @@ M^(-1)s^(-1)=170 * 10^(-5) nm^3 ms^(-1)
 uM^(-1)s^(-1)=1700 nm^3 ms^(-1)
 */
 
-define stimtime 2050
+define stimtime 700
 
 define save_on
 #define graph_on
@@ -40,8 +40,9 @@ time_stop  stimtime
 time_step  0.02 #1 usec, step  1.0/4.5/10, 4.5 is the largets off time step 
 
 ifdefine save_on	
-	output_files mol_ca_2hz.txt
-	cmd n 1 molstatecountincmpt complete ca mol_ca_2hz.txt
+	output_files mol_ca_10hz.txt.16ch
+	cmd n 1 molstatecountincmpt complete ca mol_ca_10hz.txt.16ch
+	#events reaction_events.txt	
 endif
 
 #-------------Molecules----------------
@@ -59,7 +60,6 @@ read_file initial.txt
 # cmd i 10 20 0.1 voltage 5 1 0 0 
 # single ca channel 0.0936 /usec ~ 0.03 pA, Tardross (2013) used 0.02 or 0.005 pA
 # read_file ../../../Documents/cell_ca_sig/neuron_dat_files/ica_burst_cplx.txt
-
 
 ifdefine graph_on
 	display_size all 2
