@@ -1,0 +1,15 @@
+./trials_gen_10hz16ch.sh: line 2: 18878 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+./trials_gen_10hz16ch.sh: line 2: 19016 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+./trials_gen_10hz16ch.sh: line 2: 19107 Segmentation fault      nohup smoldyn-cplx vchnl.txt > test.tmp
+./trials_gen_10hz16ch.sh: line 2: 19177 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x08f8bd40 ***
+./trials_gen_10hz16ch.sh: line 2: 19260 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x092b0d40 ***
+./trials_gen_10hz16ch.sh: line 2: 19353 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x08373d40 ***
+./trials_gen_10hz16ch.sh: line 2: 19445 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x0857cd40 ***
+./trials_gen_10hz16ch.sh: line 2: 19507 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp
+./trials_gen_10hz16ch.sh: line 2: 19613 Segmentation fault      nohup smoldyn-cplx vchnl.txt > test.tmp
+*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x08fd3d40 ***
+./trials_gen_10hz16ch.sh: line 2: 19682 Aborted                 nohup smoldyn-cplx vchnl.txt > test.tmp

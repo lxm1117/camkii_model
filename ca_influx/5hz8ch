@@ -1,0 +1,14 @@
+./trials_gen_5hz8ch.sh: line 2: 18953 Segmentation fault      nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+./trials_gen_5hz8ch.sh: line 2: 18996 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+./trials_gen_5hz8ch.sh: line 2: 19061 Segmentation fault      nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+./trials_gen_5hz8ch.sh: line 2: 19114 Segmentation fault      nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+./trials_gen_5hz8ch.sh: line 2: 19175 Segmentation fault      nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x092b1c18 ***
+./trials_gen_5hz8ch.sh: line 2: 19238 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x08f27c18 ***
+./trials_gen_5hz8ch.sh: line 2: 19287 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x08cccc18 ***
+./trials_gen_5hz8ch.sh: line 2: 19351 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+./trials_gen_5hz8ch.sh: line 2: 19420 Segmentation fault      nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x09574c18 ***
+./trials_gen_5hz8ch.sh: line 2: 19486 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt.8ch > test.tmp.5hz

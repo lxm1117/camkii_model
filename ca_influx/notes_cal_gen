@@ -1,0 +1,10 @@
+ca for 10hz16ch are paired with 5hz16ch to match the total ca2+ influx.
+Files are from 10hz_16ch_trials and 5hz_16ch_trials
+The total ca2+ for all trials are in google drive table file kinetics
+
+e.g., mol_ca_10hz16ch.txt.v34(total_ca=40363) is matched with mol_ca_5hz16ch.txt.v4(total_ca=40366)
+change directories and filenames in ca_gen.py
+the output filename is named with .0, .1, etc to label the pair numbers
+mv the outputfile to the corresponding directory, e.g., cainput_10hz16ch 
+
+repeat similarly for 5hz8ch and 10hz8ch
