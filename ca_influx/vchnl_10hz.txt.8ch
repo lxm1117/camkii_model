@@ -8,7 +8,7 @@ M^(-1)s^(-1)=170 * 10^(-5) nm^3 ms^(-1)
 uM^(-1)s^(-1)=1700 nm^3 ms^(-1)
 */
 
-define stimtime 2000
+define stimtime 700
 
 define save_on
 #define graph_on

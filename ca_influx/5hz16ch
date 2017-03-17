@@ -1,0 +1,18 @@
+*** Error in `smoldyn-cplx': free(): invalid pointer: 0x09773d50 ***
+./trials_gen_5hz16ch.sh: line 2: 20936 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x095c0d40 ***
+./trials_gen_5hz16ch.sh: line 2: 21127 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x0a001d40 ***
+./trials_gen_5hz16ch.sh: line 2: 21330 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x09d16d40 ***
+./trials_gen_5hz16ch.sh: line 2: 21606 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x0829fd40 ***
+./trials_gen_5hz16ch.sh: line 2: 21809 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x08e76d40 ***
+./trials_gen_5hz16ch.sh: line 2: 21916 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x0835cd40 ***
+./trials_gen_5hz16ch.sh: line 2: 22029 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x09437d40 ***
+./trials_gen_5hz16ch.sh: line 2: 22128 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch
+*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x096ccd40 ***
+./trials_gen_5hz16ch.sh: line 2: 22229 Aborted                 nohup smoldyn-cplx vchnl_5hz.txt > test.tmp.5hz.16ch

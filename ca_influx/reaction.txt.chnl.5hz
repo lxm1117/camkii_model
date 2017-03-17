@@ -4,7 +4,7 @@
 # phosphorylation sites are not included in mptr->bind molecule list
 # K for kinase, P for phosphate, S for substrate
 species ca
-species caL<v>  '/home/neuro/Documents/from_axon/dat_files/soma_v_5Hz.txt'
+species caL<v>  'soma_v/soma_v_5Hz.txt'
 
 molecule_lists total
 mol_list * total
