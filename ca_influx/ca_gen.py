@@ -5,14 +5,23 @@ import numpy as np
 # 30 uM in 0.75**2*1.5
 total_ca=0
 
-tadjust=120	#delay input by 120ms
-#tstop=855	# 5hz 8ch
-tstop=465	# 10hz 8ch
-#tstop=315.26 # for 16hz 16ch
+frequency='5hz'
+channel='72ch'
+#depth=5000	
+depth=2000
 
-ca_hz=np.transpose(np.loadtxt('10hz_8ch_trials/mol_ca_10hz.8ch.v10'))
-filename='cainput_10hz8ch.txt.3'
-depth=2000;
+#tadjust=120	#delay input by 120ms
+tadjust=10
+if frequency=='5hz':
+	tstop=855	# 5hz 8ch
+elif frequency=='10hz':
+	tstop=465	# 10hz 8ch
+
+#ca_hz=np.transpose(np.loadtxt('5hz_16ch_trials/mol_ca_5hz.16ch.v4'))
+#filename='cainput_10hz8ch.txt.3'
+
+ca_hz=np.transpose(np.loadtxt('mol_ca_'+frequency+'.'+channel))
+filename='cainput_'+frequency+channel+'.txt'
 
 caspk=ca_hz[1][1:]-ca_hz[1][0:-1]
 fhz=open(filename,'w')
@@ -22,7 +31,7 @@ for i in range(0,len(ca_hz[0])-1):
 		total_ca+=int(caspk[i])
 		line='cmd @ '+str(tadjust+ca_hz[0][i])+' pointsource ca ' + str(int(caspk[i]))+' 1 0 0 ' + str(depth-0.5)+'\n'
 		fhz.write(line)
-	if ca_hz[0][i]>tstop:	
+	if ca_hz[0][i]>=tstop:	
 		break
 	
 	
