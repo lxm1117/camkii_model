@@ -1,6 +1,0 @@
-compartment_mol 17	 1 complete ca
-compartment_mol 1693 1 complete cam  # 5uM
-compartment_mol 564 6 complete bK
-
-compartment_mol 7190 1 nano Ng@cam~cam@Ng
-compartment_mol 2514 1 nano Ng

@@ -8,11 +8,11 @@ M^(-1)s^(-1)=170 * 10^(-5) nm^3 ms^(-1)
 uM^(-1)s^(-1)=1700 nm^3 ms^(-1)
 */
 
-define stimtime 2050
+define stimtime 3000
 
 define save_on
 #define graph_on
-# define gradient
+#define gradient
 
 #-------------General parameters-------
 ifdefine graph_on
@@ -39,14 +39,10 @@ time_start 0
 time_stop  stimtime
 time_step  0.01 #1 usec, step  1.0/4.5/10, 4.5 is the largets off time step 
 
-ifdefine save_on	
-	output_files molcount_ca_5hz.txt.n molcount_ca_5hz.txt.c molcount_cam_5hz.txt molcount_bK_5hz.txt molcount_Ng_5hz.txt
-	cmd n 100 molstatecountincmpt complete Ng molcount_Ng_5hz.txt
-	cmd n 100 molstatecountincmpt nano ca molcount_ca_5hz.txt.n
-	cmd n 100 molstatecountincmpt cytol ca molcount_ca_5hz.txt.c
+ifdefine save_on
+	output_files molcount_cam_5hz.txt molcount_bK_5hz.txt
 	cmd n 100 molstatecountincmpt complete cam molcount_cam_5hz.txt
 	cmd n 100 molstatecountincmpt complete bK molcount_bK_5hz.txt
-	
 	events reaction_events_5hz.txt
 endif
 
@@ -66,7 +62,7 @@ read_file initial.txt
 # single ca channel 0.0936 /usec ~ 0.03 pA, Tardross (2013) used 0.02 or 0.005 pA
 # read_file ../../../Documents/cell_ca_sig/neuron_dat_files/ica_burst_cplx.txt
 
-read_file ../ca_influx/cainput_5hz.txt
+read_file ../../3cmpts/ca_influx/cainput_5hz16ch_init1/cainput_5hz16ch.txt_38
 multibinding on
 
 ifdefine graph_on
